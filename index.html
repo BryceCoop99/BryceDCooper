@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+	  <title>Bryce Cooper</title>
+	  <link rel="icon" href="/images/bryce-cooper.png">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body class="body">
+		<div class="home" id="home">
+			<div class="header">
+				<a onClick="scrollToTag('home')"><img class="main-logo" alt="Bryce Cooper logo" src="images/bc-logo.png"/></a>
+				<!--<div class="title">Bryce Cooper</div>-->
+				<div class="hamburger-menu">
+					<input id="menu__toggle" type="checkbox"/>
+					<label class="menu__btn" for="menu__toggle">
+						<span class="span1"></span>
+						<span class="span2"></span>
+						<span class="span3"></span>
+					</label>
+					 <ul class="menu__box">
+				    <li><a class="menu__item" onClick="scrollToTag('home')">Home</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('projects')">Projects</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('experience')">Experience</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('skills')">Skills</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('technologies')">My Tech</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('timeline')">Career Timeline</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('contact')">Contact</a></li>
+			    </ul>
+		    </div>
+			</div>
+			
+			<div class="content">
+				
+				<!-- My Projects Page -->
+				<div class="page">
+					<h1 class="h1">Projects</h1>
+					<div class="projects" id="projects">
+						<div class="proj-cont">
+							<div class="proj-cont-title">SimpliCite</div>
+							<!--<progress class="progress-meter" value="80" max="100" data-label="80%"></progress>-->
+							<a><img class="proj-cont-img" alt="Simplicite Site" src="images/projects/simplicite.png"/></a>
+							<div class="proj-langs">
+								<img class="proj-lang-img" src="images/icons/javascript-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/react-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/css-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/html-icon.png"/>
+							</div>
+							<div class="proj-btns">
+								<div class="proj-btn demo-btn"><a href="" target="_blank">Demo</a></div>
+								<div class="proj-btn view-btn"><a href="https://github.com/BryceCoop99/SimpliCite" target="_blank">< Code /></a></div>
+							</div>
+						</div>
+						
+						<div class="proj-cont">
+							<div class="proj-cont-title">Best Travel</div>
+							<!--<progress class="progress-meter" value="20" max="100" data-label="20%"></progress>-->
+							<a><img class="proj-cont-img" alt="Best Travel Site" src="images/projects/best-travel.png"/></a>
+							<div class="proj-langs">
+								<img class="proj-lang-img" src="images/icons/javascript-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/react-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/mongodb-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/express-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/axios-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/css-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/html-icon.png"/>
+							</div>
+							<div class="proj-btns">
+								<div class="proj-btn demo-btn"><a href="" target="_blank">Demo</a></div>
+								<div class="proj-btn view-btn"><a href="https://github.com/BryceCoop99/BestTravel" target="_blank">< Code /></a></div>
+							</div>
+						</div>
+						
+						<div class="proj-cont">
+							<div class="proj-cont-title">Bryce Cooper</div>
+							<a><img class="proj-cont-img" alt="Bryce Cooper Site" src="images/projects/brycecooper.png"/></a>
+							<div class="proj-langs">
+								<img class="proj-lang-img" src="images/icons/css-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/html-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/javascript-icon.png"/>
+							</div>
+							<div class="proj-btns">
+								<div class="proj-btn demo-btn"><a href="" target="_blank">Demo</a></div>
+								<div class="proj-btn view-btn"><a href="https://github.com/BryceCoop99/BestTravel" target="_blank">< Code /></a></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- My Experience Page -->
+				<div class="page">
+					<h1 class="h3">Experience</h1>
+					<div class="experience" id="experience">
+						
+						<div class="exp-slice">
+							<div class="timeline-date">Jan, 2022</div>
+							<div class="exp-text">
+								<strong class="exp-title">CartoCrafter</strong>
+								&emsp;Startup company that offers clients random map generations at the click of a button. Built specifically for a 
+								TableTop RPG called Dungeons and Dragons.	Random map generation is produced using TypeScript alogrithms and pre-loaded 
+								data from the database.
+								<br><br>
+								&emsp;More to come!
+							</div>
+							<div class="exp-img">
+								<img src="images/bryce-cooper.png"/>
+							</div>
+						</div>
+						
+						<div class="exp-slice">
+							<div class="timeline-date">Nov, 2022</div>
+							<div class="exp-text">
+								<strong class="exp-title">BYU Sandbox Hackathon</strong>
+								&emsp;Solely developed a MLA and APA format checker for students to gain entry in BYU's distinguished Sandbox
+								program. Built the front-end with React and JavaScript, hosted on an AWS Cloud9 server and an EC2 instance.
+							 	6 days of 60 hours were spent to complete development before introducing business idea in Hackathon presentations 
+							 	of over 100 students.
+							 	<br><br>
+								&emsp;As a result, my entire team was invited to join the Sanbox program: a startup incubator for students in teams
+								of 2-4 for 2 semesters.
+							 	<br><br>
+								&emsp;Currently, I am developing a React Native app with a user database in Firebase using OAuth for the service.
+							</div>
+							<div class="exp-img">
+								<img src="images/experiences/hackathon.jpg"/>
+							</div>
+						</div>
+						
+						<div class="exp-slice">
+							<div class="timeline-date">April, 2021</div>
+							<div class="exp-text">
+								<strong class="exp-title">GMetrix LLC</strong>
+								&emsp;A software company that provides learning material for online courses and tests for over 100,000+ users 
+								originally hired me as a Software QA Tester. During testing, I noticed that I didn't have to wait for developers
+								to fix bugs since I could do it myself.
+							 	<br><br>
+								&emsp;Over the course of a year in the company, I developed invaluable experience from mentors and co-workers.
+								I learned React, TypeScript, C#, ASP.Net, and Microsoft SQL to solve bugs and create features for production.
+							 	<br><br>
+								&emsp;For 5 months, I was considered a Software Developer alongside QA responsibilities.
+							</div>
+							<div class="exp-img">
+								<img src="images/experiences/gmetrix.jpg"/>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- My SKills Page -->
+				<div class="page">
+					<h1 class="h2">My Skills</h1>
+					<div class="skills" id="skills">
+						
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/javascript-icon.png"/>
+								<div class="cont-title">JavaScript</div>
+							</div>
+							<div class="cont-text">
+							  I use JS everyday and is my go-to Object-Oriented language. I love to use JavaScript for interactive behavior and then 
+								building out the front and building NodeJS as the backend. I use JS in most of my web and mobile applications. My favorite
+								project using this is SimpliCite, making it my most interactive website yet!
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/react-icon.png"/>
+								<div class="cont-title">React / React Native</div>
+							</div>
+							<div class="cont-text">
+								If it's not JS, then I'm coding up a project in React or React Native. Simplifying code, creating reusable components,
+								and making a sleek architecture is only part of what I love to do with React. I use this with all of my front-end services.
+								Their sleek interactive hooks are to-die-for in all web apps.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/csharp-icon.png"/>
+								<div class="cont-title">C#</div>
+							</div>
+							<div class="cont-text">
+								The OOP lang that I was introduced to at GMetrix LLC. Using C# is a gamechanger for my style of a type-safe language. 
+								I used C# to code bug fixes and features while using their IDE in Visual Studio. The debugging, testing, and deploying
+								options inside the IDE were fun and easy to use.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/css-icon.png"/>
+								<div class="cont-title">CSS</div>
+							</div>
+							<div class="cont-text">
+								I always use custom CSS styles to build my front-end apps. The capabilities of styling every aspect of interactable components
+								excites me. I expect the best customer experience from all of my cliens. I'm very comfortable coding in CSS and am taking online UI Experience courses to improve my designing skills.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/mongodb-icon.png"/>
+								<div class="cont-title">Mongo DB</div>
+							</div>
+							<div class="cont-text">
+								The most difficult yet intriguing NoSQL I've worked with so far in my career. I continue to bounce back and forth between
+								Mongo and Firebase because the difficulty of Mongo is much higher, but has far more applications like its local hosting
+								databases that I use every week. I am familiar with both the Mongo GUI, terminal, and web.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/java-icon.png"/>
+								<div class="cont-title">Java</div>
+							</div>
+							<div class="cont-text">
+								I have multiple favorite OOP languages and Java is one of them. Using the Intellij IDE, I built my own android app with
+								a SQL Lite database. Java is my 2nd most experienced OOP and I've been coding with it every semester at BYU. Java got
+								me interested in programming in the first place!
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/sqllite-icon.png"/>
+								<div class="cont-title">SQL Lite</div>
+							</div>
+							<div class="cont-text">
+								This is my foundation in every database service. I build SQL Lite db's with all of my android apps because SQL Lite is
+								the most simple SQL DB I've used in my life. This database introduced me to MySQL which I built for a small startup
+								company that stored data of dozens of gigabytes.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/typescript-icon.png"/>
+								<div class="cont-title">TypeScript</div>
+							</div>
+							<div class="cont-text">
+								Officially my favorite OOP language. After I had coded in JS and Java for several years, I feel TypeScript has hit the 
+								sweet spot in my coding	game, officially making it my most exciting language to use. Currently, I am working on a TS project
+								and will revamp my JS code with the new best.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/python-icon.png"/>
+								<div class="cont-title">Python</div>
+							</div>
+							<div class="cont-text">
+								I use python as I'm learning more about AI and machine learning tools. I use google colab to quick code algorithms
+								and AI scripts almost every day. I build Python GUI's for small desktop projects that I want to deploy.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/firebase-icon.png"/>
+								<div class="cont-title">Firebase</div>
+							</div>
+							<div class="cont-text">
+								This nicely-designed NoSQL database takes my projects to the next level when it comes to db hosting. I use Firebase with
+								several projects especially when it comes to smaller data integration. I focus on using Firebase for small-medium size
+								database projects.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/dynamodb-icon.png"/>
+								<div class="cont-title">DynamoDB</div>
+							</div>
+							<div class="cont-text">
+								I use the convenience and cheap route of hooking up Dyanamo DB's on a few of my Cloud9/EC2 servers since they are all AWS
+								hosts. I used this for the Best Travel project until I ended up switching to Mongo DB for personal preference. 
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/mysql-icon.png"/>
+								<div class="cont-title">MySQL</div>
+							</div>
+							<div class="cont-text">
+								I built a database for a project that held up to dozens of gigabytes of non-user data. Another easy-to-use database that
+								I am familiar with and have used in past projects. Unlike SQL Lite, I see this as a better option for scalability and
+								performance for my future apps with a SQL database.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/c-icon.png"/>
+								<div class="cont-title">C</div>
+							</div>
+							<div class="cont-text">
+								I have built tools such as shells, image editors, text editors, web servers, and other server-side servers with C. I made
+								a custom proxy server for a class at BYU. I have yet to make any new projects with C.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/html-icon.png"/>
+								<div class="cont-title">HTML</div>
+							</div>
+							<div class="cont-text">
+								I am very familiar with all HTML tags and processes as I've scaled all of my published projects into dynamic
+								React pages with custom CSS styles. With changes to how html tags work with React and React Native, I continue
+								to learn new HTML tricks and formats every day.
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- My Tech Page -->
+				<div class="page">
+					<h1 class="h4">Tech</h1>
+					<div class="technologies" id="technologies">
+						
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/aws-icon.png"/>
+								<div class="cont-title">AWS</div>
+							</div>
+							<div class="cont-text">
+								Every project I deploy uses some form of AWS tech. I use Cloud9 to host a few of my project's code each on
+								EC2 instances. I use Route53 for deployed projects and use Git for deployment. I used DyanamoDB for testing
+								the database of a startup company. Currently, I find myself hungry, scouring over AWS Documentation for 
+								hours every month.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/node-icon.png"/>
+								<div class="cont-title">Node JS</div>
+							</div>
+							<div class="cont-text">
+								 My most familiar server side code that I use for JavaScript and TypeScript environments. I develop server-side
+								 API's with Mongoose and runtime calls with Axios all the time. NodeJS is my go-to event-driven architecture 
+								 with numerous libraries that I commonly use: Express.js, MongoDB, Axios, Passport.js, and Moment.js.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/git-icon.png"/>
+								<div class="cont-title">Git</div>
+							</div>
+							<div class="cont-text">
+								I am an old school git terminal. I have used git IDE's in the past, but have found that the most reliable
+								and the most resuable will be that git commands that I will never forget since I use these nearly every day.
+								Git Bash is a technology that I am very familiar with as well.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/github-icon.png"/>
+								<div class="cont-title">Github</div>
+							</div>
+							<div class="cont-text">
+								When I go through my Github, I make a weekly plan of projects that I want to work on next or want to finish up a
+								feature. I started used this at GMetrix and have grown to deeply appreciate Github as a tool for managing my projects
+								and collaborating with other engineers.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/vs-icon.png"/>
+								<div class="cont-title">Visual Studio</div>
+							</div>
+							<div class="cont-text">
+								 Believe it or not, I love using Visual Studio as some of this older IDE is valuable for certain applications.
+								 I used this every day while coding at GMetrix with ASP.Net in C#. Less often, I would use WebForms to update
+								 older content before was later replaced with React.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/docker-icon.png"/>
+								<div class="cont-title">Docker</div>
+							</div>
+							<div class="cont-text">
+								 I am currently learning to use Docker as a Contunous Integration and Deployment tool for catching and fixing
+								 errors in my code early in the development cycle. The service is something I am testing as a tool for future
+								 projects.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/android-icon.png"/>
+								<div class="cont-title">Android</div>
+							</div>
+							<div class="cont-text">
+								 With Java under my belt, I built a fully-fleshed android app from scratch with an SQL Lite database in Android 
+								 Studio. This is one of my favorite mobile projects that was made while at BYU.
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/colab-icon.png"/>
+								<div class="cont-title">Google Colab</div>
+							</div>
+							<div class="cont-text">
+								 I've started to use Google Colab to quickly code up an algorithm in python or use libraries that I am testing
+								 and have yet to install on my device. I've most commonly used Colab to start my research on AI, Machine 
+								 Learning, and Deep Learning with Pytorch. 
+							</div>
+						</div>
+						<div class="cont">
+							<div class="cont-header">
+								<img class="cont-img" src="images/icons/selenium-icon.png"/>
+								<div class="cont-title">Selenium</div>
+							</div>
+							<div class="cont-text">
+								 I use Selenium as it was a big part of my Software QA Testing experience at GMetrix. The framework is 
+								 flexible, sometimes fidgety, but fun to use on all of my projects. I have used Test-Driven Development
+								 with Selenium on front-end apps and found it resourceful.
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="page">
+					<h1 class="h5">Career Timeline</h1>
+					<div class="timeline" id="timeline">
+						Coming Soon!
+					</div>
+				</div>
+				
+				<div class="page">
+					<h1 class="h6">Contact</h1>
+					<div class="contact" id="contact">
+					</div>
+				</div>
+				
+				<div class="footer">
+					Footer
+				</div>
+				
+			</div>
+    </div>
+	</body>
+	
+	<script>
+		function toggleMenu() {
+			let toggle = document.getElementById("menu__toggle");
+			if (toggle.checked) {
+				document.getElementById("menu__toggle").checked = !toggle.checked;
+			}
+		}
+		function scrollToTag(dest) {
+			toggleMenu();
+			console.log("hit");
+			let el = document.getElementById(dest).getBoundingClientRect();
+			console.log(el);
+			if (dest === 'home') {
+				window.scrollTo({ top: 0, behavior: 'smooth'});
+			} else {
+				window.scrollTo({ top: el.top+window.scrollY-150, behavior: 'smooth'});
+			}
+		}
+	</script>
+</html>
