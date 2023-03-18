@@ -9,6 +9,15 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-07NCS7GLQN"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-07NCS7GLQN');
+		</script>
 	</head>
 	<body class="body">
 		<div class="home" id="home">
@@ -23,18 +32,43 @@
 						<span class="span3"></span>
 					</label>
 					 <ul class="menu__box">
-				    <li><a class="menu__item" onClick="scrollToTag('home')">Home</a></li>
 				    <li><a class="menu__item" onClick="scrollToTag('projects')">Projects</a></li>
 				    <li><a class="menu__item" onClick="scrollToTag('experience')">Experience</a></li>
 				    <li><a class="menu__item" onClick="scrollToTag('skills')">Skills</a></li>
 				    <li><a class="menu__item" onClick="scrollToTag('technologies')">My Tech</a></li>
-				    <li><a class="menu__item" onClick="scrollToTag('timeline')">Career Timeline</a></li>
+				    <!--<li><a class="menu__item" onClick="scrollToTag('timeline')">Career Timeline</a></li>-->
 				    <li><a class="menu__item" onClick="scrollToTag('contact')">Contact</a></li>
 			    </ul>
+		    </div>
+		    <div class="main-menu">
+					<ul class="menu__list">
+				    <li><a class="menu__item" onClick="scrollToTag('projects')">Projects</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('experience')">Experience</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('skills')">Skills</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('technologies')">My Tech</a></li>
+				    <!--<li><a class="menu__item" onClick="scrollToTag('timeline')">Career Timeline</a></li>-->
+				    <li><a class="menu__item" onClick="scrollToTag('contact')">Contact</a></li>
+		   		</ul>
 		    </div>
 			</div>
 			
 			<div class="content">
+				
+				<div class="page profile">
+					<img class="profile-img" alt="Profile Image" src="images/me-transparent.png"/>
+					<div class="profile-desc">
+						&emsp;Hey! I'm 
+						<strong class="profile-name">Bryce Cooper</strong><br>
+						&emsp;I am a Full Stack Software Engineer, with a passion for crafting innovative and efficient code. 
+						With a keen eye for detail and a natural curiosity for emerging technologies, I consistently deliver high-quality 
+						software solutions that exceed client expectations.
+						<div class="row-btns">
+							<div class="def-btn"><a onClick="scrollToTag('contact')">Get In Touch</a></div>
+							<a class="icon-btn" href="https://github.com/BryceCoop99"><img src="images/icons/github-icon.png"/></a>
+							<a class="icon-btn" href="https://www.linkedin.com/in/bryce-cooper99/"><img src="images/icons/linkedin-icon.png"/></a>
+						</div>
+					</div>
+				</div>
 				
 				<!-- My Projects Page -->
 				<div class="page">
@@ -51,8 +85,8 @@
 								<img class="proj-lang-img" src="images/icons/html-icon.png"/>
 							</div>
 							<div class="proj-btns">
-								<div class="proj-btn demo-btn"><a href="" target="_blank">Demo</a></div>
-								<div class="proj-btn view-btn"><a href="https://github.com/BryceCoop99/SimpliCite" target="_blank">< Code /></a></div>
+								<div class="def-btn"><a href="https://simplicited.com/SimpliCite/build/" target="_blank">Demo</a></div>
+								<div class="def-btn code-btn"><a href="https://github.com/BryceCoop99/SimpliCite" target="_blank">< Code /></a></div>
 							</div>
 						</div>
 						
@@ -63,6 +97,7 @@
 							<div class="proj-langs">
 								<img class="proj-lang-img" src="images/icons/javascript-icon.png"/>
 								<img class="proj-lang-img" src="images/icons/react-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/node-icon.png"/>
 								<img class="proj-lang-img" src="images/icons/mongodb-icon.png"/>
 								<img class="proj-lang-img" src="images/icons/express-icon.png"/>
 								<img class="proj-lang-img" src="images/icons/axios-icon.png"/>
@@ -70,8 +105,8 @@
 								<img class="proj-lang-img" src="images/icons/html-icon.png"/>
 							</div>
 							<div class="proj-btns">
-								<div class="proj-btn demo-btn"><a href="" target="_blank">Demo</a></div>
-								<div class="proj-btn view-btn"><a href="https://github.com/BryceCoop99/BestTravel" target="_blank">< Code /></a></div>
+								<div class="def-btn disabled-btn"><a href="" target="_blank">Demo</a></div>
+								<div class="def-btn code-btn"><a href="https://github.com/BryceCoop99/BestTravel" target="_blank">< Code /></a></div>
 							</div>
 						</div>
 						
@@ -84,8 +119,22 @@
 								<img class="proj-lang-img" src="images/icons/javascript-icon.png"/>
 							</div>
 							<div class="proj-btns">
-								<div class="proj-btn demo-btn"><a href="" target="_blank">Demo</a></div>
-								<div class="proj-btn view-btn"><a href="https://github.com/BryceCoop99/BestTravel" target="_blank">< Code /></a></div>
+								<div class="def-btn code-btn"><a href="https://github.com/BryceCoop99/BryceDCooper" target="_blank">< Code /></a></div>
+							</div>
+						</div>
+						
+						<div class="proj-cont">
+							<div class="proj-cont-title">CartoCrafter</div>
+							<a><img class="proj-cont-img" alt="CartoCrafter Site" src="images/projects/coming-soon.jpg"/></a>
+							<div class="proj-langs">
+								<img class="proj-lang-img" src="images/icons/typescript-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/dynamodb-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/css-icon.png"/>
+								<img class="proj-lang-img" src="images/icons/html-icon.png"/>
+							</div>
+							<div class="proj-btns">
+								<div class="def-btn disabled-btn"><a>Demo</a></div>
+								<div class="def-btn code-btn disabled-btn"><a>< Code /></a></div>
 							</div>
 						</div>
 						
@@ -98,7 +147,7 @@
 					<div class="experience" id="experience">
 						
 						<div class="exp-slice">
-							<div class="timeline-date">Jan, 2022</div>
+							<div class="timeline-date">Jan, 2023</div>
 							<div class="exp-text">
 								<strong class="exp-title">CartoCrafter</strong>
 								&emsp;Startup company that offers clients random map generations at the click of a button. Built specifically for a 
@@ -311,10 +360,10 @@
 					</div>
 				</div>
 				
-				<!-- My Tech Page -->
+				<!-- My Tech Page Postman, -->
 				<div class="page">
 					<h1 class="h4">Tech</h1>
-					<div class="technologies" id="technologies">
+					<div class="tech" id="tech">
 						
 						<div class="cont">
 							<div class="cont-header">
@@ -322,8 +371,8 @@
 								<div class="cont-title">AWS</div>
 							</div>
 							<div class="cont-text">
-								Every project I deploy uses some form of AWS tech. I use Cloud9 to host a few of my project's code each on
-								EC2 instances. I use Route53 for deployed projects and use Git for deployment. I used DyanamoDB for testing
+								Every project I deploy uses some form of AWS tech. I use Cloud9 to host a few of my project's code on
+								EC2 instances. I use Route53 for deployed projects and Github for deployment. I used DyanamoDB for testing
 								the database of a startup company. Currently, I find myself hungry, scouring over AWS Documentation for 
 								hours every month.
 							</div>
@@ -346,7 +395,7 @@
 							</div>
 							<div class="cont-text">
 								I am an old school git terminal. I have used git IDE's in the past, but have found that the most reliable
-								and the most resuable will be that git commands that I will never forget since I use these nearly every day.
+								and the most resuable will be the git commands that I will never forget. I use these every day.
 								Git Bash is a technology that I am very familiar with as well.
 							</div>
 						</div>
@@ -356,8 +405,8 @@
 								<div class="cont-title">Github</div>
 							</div>
 							<div class="cont-text">
-								When I go through my Github, I make a weekly plan of projects that I want to work on next or want to finish up a
-								feature. I started used this at GMetrix and have grown to deeply appreciate Github as a tool for managing my projects
+								When I go through my Github, I make a weekly plan of projects that I want to work on or finish up next. 
+								I started used this at GMetrix and have grown to deeply appreciate Github as a tool for managing my projects
 								and collaborating with other engineers.
 							</div>
 						</div>
@@ -367,9 +416,9 @@
 								<div class="cont-title">Visual Studio</div>
 							</div>
 							<div class="cont-text">
-								 Believe it or not, I love using Visual Studio as some of this older IDE is valuable for certain applications.
-								 I used this every day while coding at GMetrix with ASP.Net in C#. Less often, I would use WebForms to update
-								 older content before was later replaced with React.
+								 Believe it or not, I love using Visual Studio. This IDE has been highly-valuable for certain applications 
+								 making coding seamlessly easy. I used this every day while coding at GMetrix with ASP.Net in C#. Less often, 
+								 I would use WebForms to update older content before was later replaced with React.
 							</div>
 						</div>
 						<div class="cont">
@@ -378,7 +427,7 @@
 								<div class="cont-title">Docker</div>
 							</div>
 							<div class="cont-text">
-								 I am currently learning to use Docker as a Contunous Integration and Deployment tool for catching and fixing
+								 I am currently learning to use Docker as a Continous Integration and Deployment tool for catching and fixing
 								 errors in my code early in the development cycle. The service is something I am testing as a tool for future
 								 projects.
 							</div>
@@ -419,12 +468,13 @@
 					</div>
 				</div>
 				
-				<div class="page">
-					<h1 class="h5">Career Timeline</h1>
-					<div class="timeline" id="timeline">
-						Coming Soon!
-					</div>
-				</div>
+				<!-- My Career Timeline Page -->
+				<!--<div class="page">-->
+				<!--	<h1 class="h5">Career Timeline</h1>-->
+				<!--	<div class="timeline" id="timeline">-->
+				<!--		Coming Soon!-->
+				<!--	</div>-->
+				<!--</div>-->
 				
 				<div class="page">
 					<h1 class="h6">Contact</h1>
@@ -432,9 +482,7 @@
 					</div>
 				</div>
 				
-				<div class="footer">
-					Footer
-				</div>
+				<div class="footer">&copy; 2023 | brycedcooper.com | Made by Bryce Cooper</div>
 				
 			</div>
     </div>
