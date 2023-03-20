@@ -25,6 +25,7 @@ a {
     width: 100%;
     position: fixed;
     background: white;
+    z-index: 999;
   }
   .main-logo { /*Colors: Red(f95c30) to Yellow(fce276)*/
     height: 100px;
@@ -42,12 +43,15 @@ a {
     background: linear-gradient(white, white) padding-box,
                 linear-gradient(to right, #f95c30, #fce276) border-box;
     border: 10px solid transparent;
-    animation: profile-img 3s;
+    animation-name: profile-animate;
+    animation-duration: 1s;
   }
   .profile-desc {
     font-size: 16px;
     padding: 0 40px 30px 40px;
     line-height: 24px;
+    display: flex;
+    flex-direction: column;
   }
   .profile-name {
     font-size: 32px;
@@ -62,17 +66,36 @@ a {
     margin-top: 100px;
   }
   
-  h1 {
+  .page-title {
     margin: 0;
     font-size: 36px;
     text-align: center;
     padding: 10px;
     background-image: linear-gradient(to bottom right, #F95C30 15%, #FCE276);
-    /*-webkit-background-clip: text;*/
-    /*color: transparent;*/
     color: white;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   }
+  /*.page-title::before {*/
+  /*  content: '';*/
+  /*  display: block;*/
+  /*  position: absolute;*/
+  /*  width: 55%;*/
+  /*  height: 100%;*/
+  /*  border-radius: 100% 50%;*/
+  /*  background-color: #F95C30;*/
+  /*  transform: trasnlate(85%, 60%);*/
+  /*}*/
+  /*.page-title::after {*/
+  /*  content: '';*/
+  /*  display: block;*/
+  /*  position: absolute;*/
+  /*  width: 55%;*/
+  /*  height: 100%;*/
+  /*  border-radius: 100% 50%;*/
+  /*  background-color: #FCE276;*/
+  /*  transform: trasnlate(-4%, 40%);*/
+  /*  z-index: -1;*/
+  /*}*/
   
   .page { /*Default container*/
     background-image: url("images/wallpaper.png");
@@ -100,10 +123,10 @@ a {
     justify-content: flex-start;
   }
   .cont-img {
-    width: 32%;
-    height: 80%;
-    margin-left: 10px;
-    border-radius: 20px;
+    width: 28%;
+    height: 90%;
+    margin-left: 6px;
+    border-radius: 15px;
   }
   .cont-title {
     color: white;
@@ -122,6 +145,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     min-height: 350px;
     min-width: 500px;
     margin: 30px 60px;
@@ -131,7 +155,7 @@ a {
   }
   .proj-cont-title {
     font-size: 36px;
-    padding: 10px 0 0 0;
+    padding: 15px 0 15px 0;
     color: #1D1D1B;
   }
   .progress-meter {
@@ -174,7 +198,7 @@ a {
   .proj-cont-img {
     margin-top: 5px;
     width: 100%;
-    min-height: 312px;
+    /*min-height: 312px;*/
     box-shadow: 0px 2px 6px rgba(0, 0, 0, .6);
   }
   .proj-langs {
@@ -215,7 +239,7 @@ a {
     border-bottom: 1px solid #C4C2BF;
     padding: 50px 0;
   }
-  .timeline-date {
+  .exp-date {
     font-size: 14px;
     align-self: flex-start;
     padding: 0 0 20px 20px;
@@ -234,8 +258,15 @@ a {
     line-height: 25px;
   }
   .exp-title {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .exp-position {
+    font-size: 20px;
+    color: blue;
+    font-style: italic;
+    margin-bottom: 20px;
   }
   .exp-img {
     justify-content: center;
@@ -250,6 +281,7 @@ a {
   /*Colors: Red(f95c30) to Yellow(fce276)*/
 }
 
+/* Just for Mobile and Web versions of menus! */
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
   /* Hamburger Menu! */
   .hamburger-menu {
@@ -347,8 +379,18 @@ a {
   .profile-img {
     width: 350px;
   }
+  .profile-desc {
+    display: block;
+  }
+  .profile-name {
+    display: inline-block;
+  }
   .exp-img img {
     width: 80%;
+  }
+  
+  .projects, .skills, .tech {
+  padding: 60px 0;
   }
 }
 
@@ -359,6 +401,9 @@ a {
   }
   .timeline-date {
     padding: 0;
+  }
+  .exp-date {
+    font-size: 18px;
   }
   .exp-text {
     padding: 30px 20px 30px 20px;
@@ -402,6 +447,9 @@ a {
     background-color: #CFD8DC;
   }
   
+  .exp-date {
+    font-size: 20px;
+  }
   .exp-img img {
     width: 70%;
   }
@@ -422,7 +470,6 @@ a {
 }
 
 .projects, .skills, .tech {
-  padding: 60px 0;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -431,6 +478,7 @@ a {
 .row-btns {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 .def-btn {
@@ -459,6 +507,7 @@ a {
 }
 .disabled-btn {
   pointer-events: none;
+  opacity: .5;
 }
 .disabled-btn:hover{
   /*width: 100px;*/
@@ -471,12 +520,15 @@ a {
   justify-content: center;
   height: 80px;
   border-top: 1px solid black;
+  color: white;
+  background-image: linear-gradient(to bottom right, #F95C30 15%, #FCE276);
 }
 
-@keyframes profile-img {
-  0% {right: 0px;}
-  25% {right: 50px;}
-  50% {right: 100px;}
-  75% {right: 150px;}
-  100% {left: 0px;}
+@keyframes profile-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

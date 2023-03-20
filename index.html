@@ -35,9 +35,9 @@
 				    <li><a class="menu__item" onClick="scrollToTag('projects')">Projects</a></li>
 				    <li><a class="menu__item" onClick="scrollToTag('experience')">Experience</a></li>
 				    <li><a class="menu__item" onClick="scrollToTag('skills')">Skills</a></li>
-				    <li><a class="menu__item" onClick="scrollToTag('technologies')">My Tech</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('tech')">Tech</a></li>
 				    <!--<li><a class="menu__item" onClick="scrollToTag('timeline')">Career Timeline</a></li>-->
-				    <li><a class="menu__item" onClick="scrollToTag('contact')">Contact</a></li>
+				    <!--<li><a class="menu__item" onClick="scrollToTag('contact')">Contact</a></li>-->
 			    </ul>
 		    </div>
 		    <div class="main-menu">
@@ -45,9 +45,9 @@
 				    <li><a class="menu__item" onClick="scrollToTag('projects')">Projects</a></li>
 				    <li><a class="menu__item" onClick="scrollToTag('experience')">Experience</a></li>
 				    <li><a class="menu__item" onClick="scrollToTag('skills')">Skills</a></li>
-				    <li><a class="menu__item" onClick="scrollToTag('technologies')">My Tech</a></li>
+				    <li><a class="menu__item" onClick="scrollToTag('tech')">Tech</a></li>
 				    <!--<li><a class="menu__item" onClick="scrollToTag('timeline')">Career Timeline</a></li>-->
-				    <li><a class="menu__item" onClick="scrollToTag('contact')">Contact</a></li>
+				    <!--<li><a class="menu__item" onClick="scrollToTag('contact')">Contact</a></li>-->
 		   		</ul>
 		    </div>
 			</div>
@@ -57,13 +57,20 @@
 				<div class="page profile">
 					<img class="profile-img" alt="Profile Image" src="images/me-transparent.png"/>
 					<div class="profile-desc">
-						&emsp;Hey! I'm 
+						&emsp;Hey! I'm
 						<strong class="profile-name">Bryce Cooper</strong><br>
-						&emsp;I am a Full Stack Software Engineer, with a passion for crafting innovative and efficient code. 
+						&emsp;I am a Software Engineer with a passion for crafting innovative and efficient code. 
 						With a keen eye for detail and a natural curiosity for emerging technologies, I consistently deliver high-quality 
 						software solutions that exceed client expectations.
+						<br>
+						<br>Expected Graduation: <i>April, 2024 (BYU - Computer Science)</i>
+						<br>Job Search: <i>Software Engineer & Full Stack Engineer</i>
+						
+						<br><br>Email: <i>brycecoop99@gmail.com</i>
+						<br>Phone: <i>(385) 343-7856</i>
+						
 						<div class="row-btns">
-							<div class="def-btn"><a onClick="scrollToTag('contact')">Get In Touch</a></div>
+							<!--<div class="def-btn disabled-btn"><a onClick="scrollToTag('contact')">Contact</a></div>-->
 							<a class="icon-btn" href="https://github.com/BryceCoop99"><img src="images/icons/github-icon.png"/></a>
 							<a class="icon-btn" href="https://www.linkedin.com/in/bryce-cooper99/"><img src="images/icons/linkedin-icon.png"/></a>
 						</div>
@@ -72,11 +79,10 @@
 				
 				<!-- My Projects Page -->
 				<div class="page">
-					<h1 class="h1">Projects</h1>
+					<h1 class="page-title">Projects</h1>
 					<div class="projects" id="projects">
 						<div class="proj-cont">
 							<div class="proj-cont-title">SimpliCite</div>
-							<!--<progress class="progress-meter" value="80" max="100" data-label="80%"></progress>-->
 							<a><img class="proj-cont-img" alt="Simplicite Site" src="images/projects/simplicite.png"/></a>
 							<div class="proj-langs">
 								<img class="proj-lang-img" src="images/icons/javascript-icon.png"/>
@@ -92,7 +98,6 @@
 						
 						<div class="proj-cont">
 							<div class="proj-cont-title">Best Travel</div>
-							<!--<progress class="progress-meter" value="20" max="100" data-label="20%"></progress>-->
 							<a><img class="proj-cont-img" alt="Best Travel Site" src="images/projects/best-travel.png"/></a>
 							<div class="proj-langs">
 								<img class="proj-lang-img" src="images/icons/javascript-icon.png"/>
@@ -105,7 +110,7 @@
 								<img class="proj-lang-img" src="images/icons/html-icon.png"/>
 							</div>
 							<div class="proj-btns">
-								<div class="def-btn disabled-btn"><a href="" target="_blank">Demo</a></div>
+								<!--<div class="def-btn disabled-btn"><a href="" target="_blank">Demo</a></div>-->
 								<div class="def-btn code-btn"><a href="https://github.com/BryceCoop99/BestTravel" target="_blank">< Code /></a></div>
 							</div>
 						</div>
@@ -133,8 +138,8 @@
 								<img class="proj-lang-img" src="images/icons/html-icon.png"/>
 							</div>
 							<div class="proj-btns">
-								<div class="def-btn disabled-btn"><a>Demo</a></div>
-								<div class="def-btn code-btn disabled-btn"><a>< Code /></a></div>
+								<!--<div class="def-btn disabled-btn"><a>Demo</a></div>-->
+								<!--<div class="def-btn code-btn disabled-btn"><a>< Code /></a></div>-->
 							</div>
 						</div>
 						
@@ -143,16 +148,69 @@
 				
 				<!-- My Experience Page -->
 				<div class="page">
-					<h1 class="h3">Experience</h1>
+					<h1 class="page-title">Experience</h1>
 					<div class="experience" id="experience">
 						
 						<div class="exp-slice">
-							<div class="timeline-date">Jan, 2023</div>
+							<div class="exp-date">April, 2021 - Aug, 2022</div>
+							<div class="exp-text">
+								<strong class="exp-title">GMetrix LLC</strong>
+								<div class="exp-position">Software Engineer</div>
+								&emsp;Solved 5+ high-priority issues regarding	User Authentication, MSSQL database queries, and Web & Mobile browser 
+								incompatibilities impacting	thousands of students using the GMetrix platform using ASP.NET, React, and C#.
+								Additionally, solved several issues preventing users from starting, submitting, and grading in-browser and desktop tests 
+								in quick 1-2 hour TAT's.
+							 	<br><br>
+								&emsp;Fixed 30+ UI issues that helped students more fluidly and effectively interact on the platform. These 
+								included speeding up down time of UI by 5+ seconds while improving the MVC pattern; effectively 
+								designed user clickables with increased interactable hover and redirect effects; and simplifying and consolidating UI 
+								displayed feedback from	the server and database for better user readability.
+							 	<br><br>
+								&emsp;Developed a new admin tool that allowed GMetrix admins to set permissions for all employees in the GMetrix org. 
+								Developed the new UI in React, back-end in C#, and database calls in MSSQL. The tool included a user table with 
+								search, sort, and filter options using React hooks.
+								<br><br>
+								&emsp;Delegated bug tickets for in bug sprints for all software engineers maximizing every engineers' bandwidth, 
+								efficiency, and skill set. Effectively organized hundreds of backlogged bugs into different levels of priority
+								and determined whether or not bugs persisted.
+								<br><br>
+								&emsp;Started company-wide regression testing with automation in Selenium preventing dozens of production bugs 
+								with 30+ End-to-End tests each averaging 15-20 unit tests. 
+							</div>
+							<div class="exp-img">
+								<img src="images/experiences/gmetrix.jpg"/>
+							</div>
+						</div>
+						
+						<div class="exp-slice">
+							<div class="exp-date">Nov, 2022 - Present</div>
+							<div class="exp-text">
+								<strong class="exp-title">BYU Sandbox</strong>
+								<div class="exp-position">Software Engineer</div>
+								&emsp;Solely developed an MLA and APA citation checker for students world-wide using React, JavaScript,
+								and NodeJS in 6 days for a total of 60 hours. This tool offers corrections and suggestions to in-text citations, 
+								format rules, and the Works Cited page. Deployed on an AWS Cloud9 server and an EC2 instance, this tool continues
+								to help students world-wide.
+							 	<br><br>
+								&emsp;Currently, developing a React Native app with a user database in Firebase using OAuth.
+							 	<br><br>
+								&emsp;Invited, with limited software engineer positions, into the distinguished Sandbox Program: a startup 
+								incubator for students at Brigham	Young University. 18 months will be spent on development for software solutions 
+								in the tech industry.
+							</div>
+							<div class="exp-img">
+								<img src="images/experiences/hackathon.jpg"/>
+							</div>
+						</div>
+						
+						<div class="exp-slice">
+							<div class="exp-date">Jan, 2023 - Present</div>
 							<div class="exp-text">
 								<strong class="exp-title">CartoCrafter</strong>
+								<div class="exp-position">Co-Founder / Software Engineer</div>
 								&emsp;Startup company that offers clients random map generations at the click of a button. Built specifically for a 
-								TableTop RPG called Dungeons and Dragons.	Random map generation is produced using TypeScript alogrithms and pre-loaded 
-								data from the database.
+								TableTop RPG called Dungeons and Dragons.	Random map generation is created using advanced algorithsm using TypeScript 
+								and pre-loaded data from the database.
 								<br><br>
 								&emsp;More to come!
 							</div>
@@ -161,49 +219,12 @@
 							</div>
 						</div>
 						
-						<div class="exp-slice">
-							<div class="timeline-date">Nov, 2022</div>
-							<div class="exp-text">
-								<strong class="exp-title">BYU Sandbox Hackathon</strong>
-								&emsp;Solely developed a MLA and APA format checker for students to gain entry in BYU's distinguished Sandbox
-								program. Built the front-end with React and JavaScript, hosted on an AWS Cloud9 server and an EC2 instance.
-							 	6 days of 60 hours were spent to complete development before introducing business idea in Hackathon presentations 
-							 	of over 100 students.
-							 	<br><br>
-								&emsp;As a result, my entire team was invited to join the Sanbox program: a startup incubator for students in teams
-								of 2-4 for 2 semesters.
-							 	<br><br>
-								&emsp;Currently, I am developing a React Native app with a user database in Firebase using OAuth for the service.
-							</div>
-							<div class="exp-img">
-								<img src="images/experiences/hackathon.jpg"/>
-							</div>
-						</div>
-						
-						<div class="exp-slice">
-							<div class="timeline-date">April, 2021</div>
-							<div class="exp-text">
-								<strong class="exp-title">GMetrix LLC</strong>
-								&emsp;A software company that provides learning material for online courses and tests for over 100,000+ users 
-								originally hired me as a Software QA Tester. During testing, I noticed that I didn't have to wait for developers
-								to fix bugs since I could do it myself.
-							 	<br><br>
-								&emsp;Over the course of a year in the company, I developed invaluable experience from mentors and co-workers.
-								I learned React, TypeScript, C#, ASP.Net, and Microsoft SQL to solve bugs and create features for production.
-							 	<br><br>
-								&emsp;For 5 months, I was considered a Software Developer alongside QA responsibilities.
-							</div>
-							<div class="exp-img">
-								<img src="images/experiences/gmetrix.jpg"/>
-							</div>
-						</div>
-						
 					</div>
 				</div>
 				
 				<!-- My SKills Page -->
 				<div class="page">
-					<h1 class="h2">My Skills</h1>
+					<h1 class="page-title">Skills</h1>
 					<div class="skills" id="skills">
 						
 						<div class="cont">
@@ -223,7 +244,7 @@
 								<div class="cont-title">React / React Native</div>
 							</div>
 							<div class="cont-text">
-								If it's not JS, then I'm coding up a project in React or React Native. Simplifying code, creating reusable components,
+								If it's not JavaSscript, then I'm coding up a project in React or React Native. Simplifying code, creating reusable components,
 								and making a sleek architecture is only part of what I love to do with React. I use this with all of my front-end services.
 								Their sleek interactive hooks are to-die-for in all web apps.
 							</div>
@@ -234,9 +255,9 @@
 								<div class="cont-title">C#</div>
 							</div>
 							<div class="cont-text">
-								The OOP lang that I was introduced to at GMetrix LLC. Using C# is a gamechanger for my style of a type-safe language. 
-								I used C# to code bug fixes and features while using their IDE in Visual Studio. The debugging, testing, and deploying
-								options inside the IDE were fun and easy to use.
+								The Object-Oriented language that I was introduced to at GMetrix LLC. Using C# is a gamechanger for my style of a type-safe language. 
+								I used C# to code bug fixes and features while using their IDE in Visual Studio. The debugging, testing, and deploying desktop and web 
+								applications in C# has been useful and fun to learn.
 							</div>
 						</div>
 						<div class="cont">
@@ -246,7 +267,8 @@
 							</div>
 							<div class="cont-text">
 								I always use custom CSS styles to build my front-end apps. The capabilities of styling every aspect of interactable components
-								excites me. I expect the best customer experience from all of my cliens. I'm very comfortable coding in CSS and am taking online UI Experience courses to improve my designing skills.
+								excites me. I expect the best customer experience from all users that use my pages. I'm very comfortable coding in CSS and am 
+								taking online UI Experience courses to improve my UI skills.
 							</div>
 						</div>
 						<div class="cont">
@@ -256,8 +278,8 @@
 							</div>
 							<div class="cont-text">
 								The most difficult yet intriguing NoSQL I've worked with so far in my career. I continue to bounce back and forth between
-								Mongo and Firebase because the difficulty of Mongo is much higher, but has far more applications like its local hosting
-								databases that I use every week. I am familiar with both the Mongo GUI, terminal, and web.
+								Mongo and Firebase because the difficulty in Mongo is much higher, but has far more applications like its local hosting
+								databases that I use every week. I am familiar with both the Mongo GUI, Mongo Terminal, and Mongo Web.
 							</div>
 						</div>
 						<div class="cont">
@@ -266,9 +288,9 @@
 								<div class="cont-title">Java</div>
 							</div>
 							<div class="cont-text">
-								I have multiple favorite OOP languages and Java is one of them. Using the Intellij IDE, I built my own android app with
-								a SQL Lite database. Java is my 2nd most experienced OOP and I've been coding with it every semester at BYU. Java got
-								me interested in programming in the first place!
+								I have multiple favorite Object-Oriented programming languages and Java is one of them. Using the Intellij IDE, 
+								I built an android app with	a SQL Lite database. Java is my 2nd most experienced OOP and I've been coding with 
+								it every semester at BYU. Java is what got me interested in programming!
 							</div>
 						</div>
 						<div class="cont">
@@ -277,9 +299,9 @@
 								<div class="cont-title">SQL Lite</div>
 							</div>
 							<div class="cont-text">
-								This is my foundation in every database service. I build SQL Lite db's with all of my android apps because SQL Lite is
-								the most simple SQL DB I've used in my life. This database introduced me to MySQL which I built for a small startup
-								company that stored data of dozens of gigabytes.
+								This is my foundation in every database service. I build SQL Lite databases with all of my android apps because SQL Lite is
+								the most simple SQL DB I've ever used. This database introduced me to MySQL which I built for a small startup
+								company that stored data of dozens of gigabytes. I occasionaly use SQL Lite to test android and web apps.
 							</div>
 						</div>
 						<div class="cont">
@@ -289,8 +311,8 @@
 							</div>
 							<div class="cont-text">
 								Officially my favorite OOP language. After I had coded in JS and Java for several years, I feel TypeScript has hit the 
-								sweet spot in my coding	game, officially making it my most exciting language to use. Currently, I am working on a TS project
-								and will revamp my JS code with the new best.
+								sweet spot in my coding	game, officially making it the most exciting language for me to use. Currently, I am working on 
+								a TS project and I plan to revamp my JavaScript code with the TypeScript for type-safe purposes.
 							</div>
 						</div>
 						<div class="cont">
@@ -300,7 +322,7 @@
 							</div>
 							<div class="cont-text">
 								I use python as I'm learning more about AI and machine learning tools. I use google colab to quick code algorithms
-								and AI scripts almost every day. I build Python GUI's for small desktop projects that I want to deploy.
+								and AI scripts in Python almost every day. I build Python GUI's for small desktop projects that I want to deploy.
 							</div>
 						</div>
 						<div class="cont">
@@ -310,8 +332,8 @@
 							</div>
 							<div class="cont-text">
 								This nicely-designed NoSQL database takes my projects to the next level when it comes to db hosting. I use Firebase with
-								several projects especially when it comes to smaller data integration. I focus on using Firebase for small-medium size
-								database projects.
+								several projects especially when it comes to smaller data integration. I focus on using Firebase for small to medium size
+								application services.
 							</div>
 						</div>
 						<div class="cont">
@@ -320,8 +342,8 @@
 								<div class="cont-title">DynamoDB</div>
 							</div>
 							<div class="cont-text">
-								I use the convenience and cheap route of hooking up Dyanamo DB's on a few of my Cloud9/EC2 servers since they are all AWS
-								hosts. I used this for the Best Travel project until I ended up switching to Mongo DB for personal preference. 
+								I use the convenience and cheap route of hooking up Dyanamo DB's on a few of my Cloud9/EC2 servers since they are all of these
+								technologies run on AWS. I used this for the Best Travel project until I ended up switching to Mongo DB for personal preference. 
 							</div>
 						</div>
 						<div class="cont">
@@ -332,7 +354,7 @@
 							<div class="cont-text">
 								I built a database for a project that held up to dozens of gigabytes of non-user data. Another easy-to-use database that
 								I am familiar with and have used in past projects. Unlike SQL Lite, I see this as a better option for scalability and
-								performance for my future apps with a SQL database.
+								performance for my future apps with an SQL database.
 							</div>
 						</div>
 						<div class="cont">
@@ -342,7 +364,8 @@
 							</div>
 							<div class="cont-text">
 								I have built tools such as shells, image editors, text editors, web servers, and other server-side servers with C. I made
-								a custom proxy server for a class at BYU. I have yet to make any new projects with C.
+								a custom proxy server for a class at BYU. I have yet to make any new projects with C, but have a huge apprecation for 
+								multi-processing, multi-threading, proxying servers with C.
 							</div>
 						</div>
 						<div class="cont">
@@ -360,15 +383,15 @@
 					</div>
 				</div>
 				
-				<!-- My Tech Page Postman, -->
+				<!-- My Tech Page Postman, LucidChart (UML and Sequence diagrams) -->
 				<div class="page">
-					<h1 class="h4">Tech</h1>
+					<h1 class="page-title">Tech</h1>
 					<div class="tech" id="tech">
 						
 						<div class="cont">
 							<div class="cont-header">
 								<img class="cont-img" src="images/icons/aws-icon.png"/>
-								<div class="cont-title">AWS</div>
+								<div class="cont-title">Amazon Web Services</div>
 							</div>
 							<div class="cont-text">
 								Every project I deploy uses some form of AWS tech. I use Cloud9 to host a few of my project's code on
@@ -401,7 +424,7 @@
 						</div>
 						<div class="cont">
 							<div class="cont-header">
-								<img class="cont-img" src="images/icons/github-icon.png"/>
+								<img class="cont-img" src="images/icons/t-github-icon.png"/>
 								<div class="cont-title">Github</div>
 							</div>
 							<div class="cont-text">
@@ -470,19 +493,19 @@
 				
 				<!-- My Career Timeline Page -->
 				<!--<div class="page">-->
-				<!--	<h1 class="h5">Career Timeline</h1>-->
+				<!--	<h1 class="page-title">Career Timeline</h1>-->
 				<!--	<div class="timeline" id="timeline">-->
 				<!--		Coming Soon!-->
 				<!--	</div>-->
 				<!--</div>-->
 				
-				<div class="page">
-					<h1 class="h6">Contact</h1>
-					<div class="contact" id="contact">
-					</div>
-				</div>
+				<!--<div class="page">-->
+				<!--	<h1 class="page-title">Contact</h1>-->
+				<!--	<div class="contact" id="contact">-->
+				<!--	</div>-->
+				<!--</div>-->
 				
-				<div class="footer">&copy; 2023 | brycedcooper.com | Made by Bryce Cooper</div>
+				<div class="footer">&copy; 2023 | Bryce Cooper</div>
 				
 			</div>
     </div>
